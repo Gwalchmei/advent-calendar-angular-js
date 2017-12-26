@@ -1,0 +1,3 @@
+<span ng-if="!$ctrl.isOpen && !$ctrl.isOpenable()">{{ $ctrl.index ? $ctrl.index : '' }}</span>
+<button ng-if="!$ctrl.isOpen && $ctrl.isOpenable()" ng-click="$ctrl.open()">{{ $ctrl.index }}</button>
+<img ng-if="$ctrl.isOpen" src="cats/{{ $ctrl.index }}.png"></img>
